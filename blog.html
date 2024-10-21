@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindWell - Blogs & Articles</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #8499d5
+        }
+        header, footer {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #5cb85c;
+        }
+        .search-bar {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .search-bar input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-bar input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-bar input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .article {
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .article img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .article h3 {
+            margin: 10px 0;
+        }
+        .article p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .article a {
+            color: #5cb85c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .community-section {
+            background-color: #f9f9f9;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .community-section h2 {
+            margin-bottom: 20px;
+        }
+        .community-section p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        .newsletter-form {
+            text-align: center;
+            padding: 20px;
+            background-color: #eee;
+        }
+        .newsletter-form input[type="text"], .newsletter-form input[type="email"] {
+            padding: 10px;
+            width: 250px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .newsletter-form input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer a {
+            color: #5cb85c;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Logo and Navigation -->
+    <header> 
+        <div class="container">
+            <img src="images/logo.png" alt="MindWell Logo" style="float: left; margin-left: 40px; height: 60px;">
+            <span class="logo-text">MindWell</span>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="meditation.html">Meditation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <!-- Search Functionality -->
+    <div class="search-bar">
+        <h2>Search Blogs & Articles</h2>
+        <form action="">
+            <input type="text" placeholder="Search by keywords..." name="search">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <!-- Article Grid -->
+    <section class="article-grid">
+        <div class="article">
+            <img src="Images/Article1.jpg" alt="Article 1">
+            <h3>Managing Anxiety</h3>
+            <p>A guide to identifying and managing anxiety effectively.</p>
+            <a href="managinganxiety.html">Read more</a>
+        </div>
+        <div class="article">
+            <img src="Images/depression2.jpg" alt="Article 2">
+            <h3>Overcoming Depression</h3>
+            <p>Learn effective strategies for overcoming depression.</p>
+            <a href="Overcomingdepression.html">Read more</a>
+        </div>
+        <div class="article">
+            <img src="Images/stress2.jpg" alt="Article 3">
+            <h3>Stress Management</h3>
+            <p>Discover ways to manage stress and lead a balanced life.</p>
+            <a href="Stressmgmt.html">Read more</a>
+        </div>
+        <!-- Add more articles as needed -->
+    </section>
+
+    <!-- Community and User Stories Section -->
+    <section class="community-section">
+        <h2>Community and User Stories</h2>
+        <p>Read stories shared by users about their mental health journeys. Help build the MindWell community by contributing your own stories and experiences.</p>
+        <a href="#share-story">Share your story</a>
+    </section>
+
+    <!-- Newsletter Subscription Form -->
+    <section class="newsletter-form">
+        <h2>Subscribe to our Newsletter</h2>
+        <form action="">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 MindWell. All rights reserved.</p>
+        <p><a href="policy.html">Privacy Policy</a> | <a href="#terms-of-use">Terms of Use</a> | <a href="#contact">Contact Us</a></p>
+    </footer>
+</body>
+</html>
+
