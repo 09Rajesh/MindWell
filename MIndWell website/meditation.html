@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindWell - Meditation and Relaxation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header, footer {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #5cb85c;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .meditation-page {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .meditation-page h2 {
+            margin-bottom: 20px;
+        }
+        /* Guided Meditation Section */
+        .meditation-sessions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .session-card {
+            width: 30%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px 0;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .session-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .session-card h3 {
+            margin-bottom: 10px;
+        }
+        .session-card p {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .play-btn {
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .play-btn:hover {
+            background-color: #4cae4c;
+        }
+        /* Interactive Media Player */
+        .media-player {
+            margin: 50px 0;
+        }
+        .media-player audio, .media-player video {
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+        }
+        /* Session Categories */
+        .categories {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .categories h3 {
+            margin-bottom: 20px;
+        }
+        .categories ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .categories ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        .categories ul li a {
+            padding: 10px 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .categories ul li a:hover {
+            background-color: #5cb85c;
+            color: white;
+        }
+        /* User Favorites Section */
+        .favorites-section {
+            margin: 50px 0;
+            text-align: center;
+        }
+        .favorites-section h3 {
+            margin-bottom: 20px;
+        }
+        .favorites-section .favorite-btn {
+            padding: 10px 20px;
+            background-color: #000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .favorites-section .favorite-btn:hover {
+            background-color: #444;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer a {
+            color: #5cb85c;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Logo and Navigation -->
+    <header> 
+        <div class="container">
+            <img src="images/logo.png" alt="MindWell Logo" style="float: left; margin-left: 40px; height: 60px;">
+            <span class="logo-text">MindWell</span>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="meditation.html">Meditation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <!-- Meditation and Relaxation Page -->
+    <section class="meditation-page">
+        <h2>Meditation and Relaxation</h2>
+
+        <!-- Guided Meditation Sessions -->
+        <div class="meditation-sessions">
+            <div class="session-card">
+                <img src="Images/mindfulness.jpg" alt="Mindfulness Meditation">
+                <h3>Mindfulness Meditation</h3>
+                <p>Experience mindfulness to reduce stress and achieve calmness.</p>
+                <a href="https://youtu.be/ssss7V1_eyA?si=vUVAUWNtv9rl4cwC" class="play-btn" target="_blank">Play Session</a>
+            </div>
+            <div class="session-card">
+                <img src="Images/breathing.jpeg" alt="Breathing Meditation">
+                <h3>Breathing Meditation</h3>
+                <p>Calm your mind with a guided breathing session.</p>
+                <a href="https://youtu.be/enJyOTvEn4M?si=1PEfdc8wVjjp29nh" class="play-btn" target="_blank">Play Session</a>
+            </div>
+            <div class="session-card">
+                <img src="Images/bodyscan.jpg" alt="Body Scan Meditation">
+                <h3>Body Scan Meditation</h3>
+                <p>Relax and unwind with a full body scan session.</p>
+                <a href="https://youtu.be/RG1E5OUPWwo?si=BJKhLzS8fl3oaLCQ" class="play-btn" target="_blank">Play Session</a>
+            </div>
+        </div>
+
+        <!-- Interactive Media Player -->
+        <div class="media-player">
+            <h3>Interactive Media Player</h3>
+            <audio controls>
+                <source src="sample-audio.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <br>
+            <video controls>
+                <source src="sample-video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </div>
+
+        <!-- Session Categories -->
+        <div class="categories">
+            <h3>Explore Meditation Categories</h3>
+            <ul>
+                <li><a href="#stress-relief">Stress Relief</a></li>
+                <li><a href="#anxiety-relief">Anxiety Relief</a></li>
+                <li><a href="#sleep-aid">Sleep Aid</a></li>
+            </ul>
+        </div>
+
+        <!-- User Favorites -->
+        <div class="favorites-section">
+            <h3>Your Favorite Sessions</h3>
+            <button class="favorite-btn">Save to Favorites</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 MindWell. All rights reserved.</p>
+        <p><a href="policy.html">Privacy Policy</a> | <a href="#terms-of-use">Terms of Use</a> | <a href="#contact">Contact Us</a></p>
+    </footer>
+</body>
+</html>
+
